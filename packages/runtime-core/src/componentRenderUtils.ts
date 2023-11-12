@@ -217,7 +217,7 @@ export function renderComponentRoot(
           `The directives will not function as intended.`
       )
     }
-    // clone before mutating since the root may be a hoisted vnode
+    // clone before mutating since the root may be a hoisted vnode  - todo -> 存在疑问❓ 为什么要再cloneVNode, 前面normalizeVNode 已经有clone 动作（cloneIfMounted）
     root = cloneVNode(root)
     root.dirs = root.dirs ? root.dirs.concat(vnode.dirs) : vnode.dirs
   }
