@@ -14,10 +14,19 @@ const info = reactive({
 
 const updateTitle = () => {
   title.value = "Hello Vite"
+  title.value = 'test';
+  console.log('title', title, title.value)
 }
 
 const updateAge = () => {
   info.age = info.age + 1
+  console.log('info.age', info.age)
+}
+
+const updateAgeAndTitle = () => {
+  // debug: 组件更新时排序
+  info.age = info.age + 1;
+  title.value = 'test2'
 }
 
 </script>
@@ -26,6 +35,7 @@ const updateAge = () => {
   <UserInfo :title="title" :info="info"  />
   <button @click="updateTitle"> 更新title </button>
   <button @click="updateAge"> 更新age </button>
+  <button @click="updateAgeAndTitle"> 组件更新时排序 </button>
 </template>
 
 <style scoped>
