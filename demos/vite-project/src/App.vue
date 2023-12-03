@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import RefPropUpdate from './components/RefPropUpdate.vue';
 import Computed from './components/Computed.vue';
+import WatchApi from './components/WatchApi.vue';
 </script>
 
 <template>
   <RefPropUpdate />
   <Computed />
+  <WatchApi />
 </template>
 
 <style scoped>
