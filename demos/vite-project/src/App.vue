@@ -2,12 +2,16 @@
 import RefPropUpdate from './components/RefPropUpdate.vue';
 import Computed from './components/Computed.vue';
 import WatchApi from './components/WatchApi.vue';
+import Provide from './components/Provide/Provide.vue'
+import ModelW from './components/Model/ModelW.vue'
 </script>
 
 <template>
-  <RefPropUpdate />
+  <!-- <RefPropUpdate />
   <Computed />
-  <WatchApi />
+  <WatchApi /> -->
+  <!-- <Provide /> -->
+  <ModelW />
 </template>
 
 <style scoped>
