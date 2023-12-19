@@ -4,6 +4,7 @@ import Computed from './components/Computed.vue';
 import WatchApi from './components/WatchApi.vue';
 import Provide from './components/Provide/Provide.vue'
 import ModelW from './components/Model/ModelW.vue'
+import Diff from './components/Diff/Diff.vue'
 </script>
 
 <template>
@@ -11,7 +12,8 @@ import ModelW from './components/Model/ModelW.vue'
   <Computed />
   <WatchApi /> -->
   <!-- <Provide /> -->
-  <ModelW />
+  <!-- <ModelW /> -->
+  <Diff />
 </template>
 
 <style scoped>
